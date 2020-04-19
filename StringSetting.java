@@ -21,7 +21,7 @@ class StringSetting {
     private static String result = "\n运行结果：";
     private static String ending = "\n\n----" +
             "\n* 更多LeetCode题解请看[题解仓库](https://github.com/ustcyyw/yyw_algorithm)" +
-            "\n* 题解框架由小工具自动生产，参考[工具项目](123)" +
+            "\n* 题解框架由小工具自动生产，参考[工具项目](https://github.com/ustcyyw/markdown_tool)" +
             "\n* [我的github](https://github.com/ustcyyw)还有别的小项目也很好玩。卑微求个~小星星蟹蟹";
 
     private static String path = "C:\\Users\\Administrator\\Desktop\\";
