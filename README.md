@@ -82,7 +82,7 @@
     * 注意异常处理，就是处理不合法输入，然后弹窗提示修改。
     * 小程序入口`APPEnter.java`，涉及GUI的固定写法。
 
-* 打包成jar文件，如果你使用idea，并且使用maven创建项目，可以参考[我的笔记]([https://github.com/ustcyyw/nootbook/blob/master/Tool_use_guide/%E5%9C%A8IDEA%E4%B8%AD%E7%94%9F%E6%88%90Maven%E9%A1%B9%E7%9B%AE%E7%9A%84jar%E6%96%87%E4%BB%B6.md](https://github.com/ustcyyw/nootbook/blob/master/Tool_use_guide/在IDEA中生成Maven项目的jar文件.md))。其他情况就去百度/Google。
+* 打包成jar文件，如果你使用idea，并且使用maven创建项目，可以参考[我的笔记](https://github.com/ustcyyw/nootbook/blob/master/Tool_use_guide/在IDEA中生成Maven项目的jar文件.md)。其他情况就去百度/Google。
 
 * .bat文件的设置，`md_tool_cmd.py`：
 
