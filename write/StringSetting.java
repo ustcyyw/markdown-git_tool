@@ -11,15 +11,17 @@ package write;
 class StringSetting {
     private static String encoding = "GB2312";
     private static String article = "# %s";
-    private static String article2 = "\n### 原题";
+    private static String article2 = "\n### 原题\n\n\n";
     private static String solve = "\n### 解法";
+    private static String advertise1 = "\n**更多LeetCode题解请看[题解仓库](https://github.com/ustcyyw/yyw_algorithm)," +
+            "如果觉得还不错请别吝啬你的star~**";
     private static String mulSolve = "\n### %d种解法";
     private static String solveIndex = "\n##### %d.";
     private static String insertCode = "\n```java\n```";
     private static String thinking = "\n思路分析：";
     private static String point = "\n* \n";
     private static String result = "\n运行结果：";
-    private static String ending = "\n\n----" +
+    private static String advertise2 = "\n\n----" +
             "\n* 更多LeetCode题解请看[题解仓库](https://github.com/ustcyyw/yyw_algorithm)" +
             "\n* 题解框架由小工具自动生产，参考[工具项目](https://github.com/ustcyyw/markdown_tool)" +
             "\n* [我的github](https://github.com/ustcyyw)还有别的小项目也很好玩。卑微求个~小星星蟹蟹";
@@ -70,7 +72,11 @@ class StringSetting {
         return path;
     }
 
-    public static String getEnding() {
-        return ending;
+    public static String getAdvertise1() {
+        return advertise1;
+    }
+
+    public static String getAdvertise2() {
+        return advertise2;
     }
 }

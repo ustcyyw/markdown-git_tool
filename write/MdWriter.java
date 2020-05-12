@@ -27,6 +27,7 @@ public class MdWriter {
     public void write(String name, int n) {
         writer.print(String.format(StringSetting.getArticle(), name));
         writer.print(StringSetting.getArticle2());
+        writer.print(StringSetting.getAdvertise1());
         if (n == 1) {
             writer.print(StringSetting.getSolve());
             createSolve();
@@ -37,7 +38,7 @@ public class MdWriter {
                 createSolve();
             }
         }
-        writer.print(StringSetting.getEnding());
+        writer.print(StringSetting.getAdvertise2());
         writer.close();
     }
 
