@@ -30,7 +30,7 @@
 
 题目名称自选，文件名称可以写路径+文件名，不过这需要调整java文件中的配置。建议直接写文件名，不需要后缀.md。解法数目只能为整数，这里生成一种解法的题解框架，就输入。点击确定得到题解框架如下：
 
-![1种解法生成框架.png](https://github.com/ustcyyw/markdown_tool/blob/master/picture_for_readme/1%E7%A7%8D%E8%A7%A3%E6%B3%95%E7%94%9F%E6%88%90%E6%A1%86%E6%9E%B6.png?raw=true)
+![1种解法.png](https://github.com/ustcyyw/markdown_tool/blob/master/picture_for_readme/1%E7%A7%8D%E8%A7%A3%E6%B3%95.png?raw=true)
 
 然后就可以愉快的开始往里面写你的总结了。 
 
@@ -42,7 +42,7 @@
 
 其余同上，点击确定得到题解框架如下：
 
-![2种及以上解法生成框架.png](https://github.com/ustcyyw/markdown_tool/blob/master/picture_for_readme/2%E7%A7%8D%E5%8F%8A%E4%BB%A5%E4%B8%8A%E8%A7%A3%E6%B3%95%E7%94%9F%E6%88%90%E6%A1%86%E6%9E%B6.png?raw=true)
+![2种及以上解法.png](https://github.com/ustcyyw/markdown_tool/blob/master/picture_for_readme/2%E7%A7%8D%E5%8F%8A%E4%BB%A5%E4%B8%8A%E8%A7%A3%E6%B3%95.png?raw=true)
 
 ##### 两种错误示范
 
