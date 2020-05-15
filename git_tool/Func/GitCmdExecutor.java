@@ -66,4 +66,10 @@ public class GitCmdExecutor {
         }
         return res;
     }
+
+    public static void main(String[] args) throws Exception {
+        GitCmdExecutor bt = new GitCmdExecutor("markdown-git_tool", "*", "Git命令行执行类");
+        System.out.println(bt.cmd);
+        System.out.println(bt.exec());
+    }
 }
