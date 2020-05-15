@@ -31,11 +31,15 @@ public class FileSearcher {
 
     /**
      *
-     * @param name 不含路径的文件名，文件名包括后缀 e.g text.txt, readme.md
+     * @param name 通配符 或者 不含路径的文件名，文件名包括后缀 e.g text.txt, readme.md
      * @return 补全了从仓库目录开始的带相对路径的文件名
      */
     private static String res;
     public static String completeFileName(String repoName, String name){
+        // 如果是通配符，直接返回通配符
+        if(name.equals("*"))
+            return name;
+        // 否则进行相对路径的补全
         File reposFolder = new File(Setting.getRepPath() + "\\" + repoName);
         res = "";
         backTrack(new ArrayList<>(), reposFolder, name);
