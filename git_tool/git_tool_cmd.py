@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/4/18 0018 上午 11:56
+# @Time    : 2020/5/16 0016 上午 11:57
 # @Author  : yyw@ustc
 # @E-mail  : yang0@mail.ustc.edu.cn
 # @Github  : https://github.com/ustcyyw
@@ -11,9 +11,8 @@ hide = '@echo off\n' \
        'start mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit\n' \
        ':begin\n'
 
-filename = "E:\study\github\md_kit-1.0.jar"
+filename = "E:\study\github\git_kit-1.0.jar"
 
-with open("md_tool_cmd.bat", "w") as f:
+with open("git_tool_cmd.bat", "w") as f:
     f.write(hide)
     f.write("java -jar " + filename)
-
