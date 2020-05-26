@@ -63,7 +63,7 @@
 * 如果每次都需要打开ide再运行或者使用命令行传参数好像很麻烦，不如做个简单的GUI，再做一个.bat文件来启动GUI，多方便！
 * 由于扩展性较差，下面两个链接是对markdown_tool, git_tool的一些实现细节的介绍，可以看懂这个思路然后自己造属于自己的小工具来方便自己呀：
     * [markdown_tool思路](https://github.com/ustcyyw/markdown-git_tool/blob/master/markdown_tool/markdown_tool思路.md)
-    * [git_tool思路](https://github.com/ustcyyw/markdown-git_tool/blob/master/git_tool/git_tool 思路.md)
+    * [git_tool思路](https://github.com/ustcyyw/markdown-git_tool/blob/master/git_tool/git_tool%20%E6%80%9D%E8%B7%AF.md)
 
 ### 欢迎交流
 
