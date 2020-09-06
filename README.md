@@ -3,8 +3,10 @@
 
 * 总结leetcode题解时使用的md文件格式固定，且要带上固定的落款（一些小广告），并且要将题解放到自己的github仓库（题解仓库[点击here](https://github.com/ustcyyw/yyw_algorithm)）。
 * 固定格式框架，提交到github的“add commit push”三步曲都是重复性劳动，不如用个工具解决麻烦吧（依旧是兴趣驱动的小玩具）。
-
-* markdown_tool用于一键生成题解框架；git_tool用于一键将文件提交到github。
+* markdown_tool用于一键生成题解框架；git_tool用于一键将文件提交到github()。
+* 由于扩展性较差，下面两个链接是对markdown_tool, git_tool的一些实现细节的介绍，可以看懂这个思路然后自己造属于自己的小工具来方便自己呀：
+  * [markdown_tool_readme]()
+  * [git_tool_readme]()
 
 -----
 
@@ -13,20 +15,24 @@
 ### markdown_tool：
 
 * 可以生成仅有一种解法的题解框架。
-    * <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool%E4%B8%80%E7%A7%8D%E8%A7%A3%E6%B3%95.png?raw=true" alt="md_tool一种解法.png" style="zoom:80%;" />
-    * GUI界面是在作图的时候变瘦了，真实的比例还不错。
-    * 题目名称填入Leetcode算法题的名称；文件名称的输入不需要后缀.md；生成文件存放的路径可以自己设置（查看markdown_tool目录下分项目的readme文件有详细介绍）
+
+    <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool_one_solve.jpg?raw=true" alt="md_tool_one_solve.png" style="zoom:80%;" />
+
+    * 题目名称填入Leetcode算法题的名称；
+    * 文件名称的输入不需要后缀.md；
+    * 生成文件存放的路径可以自己设置（查看markdown_tool_readme）
 * 可以生成2种或者多种解法的题解框架。
-    * <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool%E4%B8%A4%E7%A7%8D%E8%A7%A3%E6%B3%95.png?raw=true" alt="md_tool两种解法.png" style="zoom:80%;" />
+     <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool_two_solve.jpg?raw=true" alt="md_tool_two_solve.png" style="zoom:80%;" />
+    
     * 在“解法数目”处填入解法数目。
 
 ### git_tool：
 
 * 提交仓库中所有新文件。
-    * <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/git_tool%E5%B1%95%E7%A4%BA1.png?raw=true" alt="git_tool展示1.png" style="zoom:80%;" />
+    * <img src="?raw=true" alt="git_tool展示1.png" style="zoom:80%;" />
     * 选择仓库，填写commit的内容，文件名处填入“*”后点击确定。
 * 提交仓库中的指定文件。
-    * <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/git_tool%E5%B1%95%E7%A4%BA2.png?raw=true" alt="git_tool展示2.png" style="zoom:80%;" />
+    * <img src="?raw=true" alt="git_tool展示2.png" style="zoom:80%;" />
     * 选择仓库，填写commit的内容，文件名处填入指定的文件名（不能省略文件后缀），后点击确定。
     * 这里要确保仓库中没有重名的文件（哪怕他们的相对路径并不同），此小bug是将来可以补齐的地方。
 
@@ -34,9 +40,10 @@
 
 ### markdown_tool：
 
-* <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool%E9%94%99%E8%AF%AF.png?raw=true" alt="md_tool错误.png" style="zoom:80%;" />
-    * （a）这种错误就是解法数目输入错误，只能输入大于0的整数。
-    * （b）这种错误就是文件名中出现非法字符，不能输入非法的文件名字符，要修改路径可以修改`StringSetting.java`中的路径设置。
+<img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/md_tool_error.jpg?raw=true" alt="md_tool_error.png" style="zoom:80%;" />
+
+* 左边：解法数目输入错误，只能输入大于0的整数。
+* 右边：文件名中出现非法字符，不能输入非法的文件名字符。
 
 ### git_tool：
 
@@ -60,10 +67,7 @@
 * git_tool:
     * 就是将add commit push三个命令行在程序中自动执行。
     * 需要添加commit的内容，需要知道往哪一个仓库添加什么文件，这就需要进行文件相关的检索。
-* 如果每次都需要打开ide再运行或者使用命令行传参数好像很麻烦，不如做个简单的GUI，再做一个.bat文件来启动GUI，多方便！
-* 由于扩展性较差，下面两个链接是对markdown_tool, git_tool的一些实现细节的介绍，可以看懂这个思路然后自己造属于自己的小工具来方便自己呀：
-    * [markdown_tool思路](https://github.com/ustcyyw/markdown-git_tool/blob/master/markdown_tool/markdown_tool思路.md)
-    * [git_tool思路](https://github.com/ustcyyw/markdown-git_tool/blob/master/git_tool/git_tool%20%E6%80%9D%E8%B7%AF.md)
+* 如果每次都需要打开ide再运行或者使用命令行传参数很麻烦，不如做个简单的GUI，再打包成jar，然后通过命令后来开启小工具会很方便！
 
 ### 欢迎交流
 
