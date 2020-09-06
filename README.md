@@ -5,7 +5,7 @@
 * 固定格式框架，提交到github的“add commit push”三步曲都是重复性劳动，不如用个工具解决麻烦吧（依旧是兴趣驱动的小玩具）。
 * markdown_tool用于一键生成题解框架；git_tool用于一键将文件提交到github()。
 * 由于扩展性较差，下面两个链接是对markdown_tool, git_tool的一些实现细节的介绍，可以看懂这个思路然后自己造属于自己的小工具来方便自己呀：
-  * [markdown_tool_readme]()
+  * [markdown_tool_readme](https://github.com/ustcyyw/markdown-git_tool/blob/master/markdown_tool_readme.md)
   * [git_tool_readme]()
 
 -----

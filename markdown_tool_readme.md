@@ -27,16 +27,17 @@
     * 修改的时候注意：
 
         * 配置项不允许修改。文件输出目录 path；前置广告 adv1；后置广告 adv2。并且配置项与值之间用等号连接，不能有多余空格。
-        * 前置广告固定单行；后置广告可以多行，每一行的内容使用分号（;）分割。
-
-    * 配置及效果示例图如下：
-
+        * 配置项之间不能有空行。
+    * 前置广告固定单行；后置广告可以多行，每一行的内容使用分号（;）分割。
+    
+* 配置及效果示例图如下：
+    
         <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/config.jpg?raw=true?raw=true" alt="错误或者警告.png" style="zoom:80%;" /> 
     
 * 小程序入口`APPEnter`
 
   ```java
-  		static {
+  	static {
           StringSetting.setSetting();
       }
   ```
