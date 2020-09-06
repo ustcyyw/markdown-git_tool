@@ -1,12 +1,12 @@
 ### markdown_tool思路
 
-**md的固定格式**：
+#### md的固定格式：
 
 * 支持md语法的软件/网页会将固定格式的字符串渲染成对应的格式。
 * 所以我们就可以利用这一点，查看格式对应的字符串，然后将你需要的格式以字符串的形式写入md文件即可。
 * 我使用typora这个软件的源代码模式来看格式与字符串的对应关系。
 
-**配置加载**
+#### 配置加载
 
 * `StringSetting`中进行了多种格式对应字符串的设置。
   
@@ -28,29 +28,29 @@
 
         * 配置项不允许修改。文件输出目录 path；前置广告 adv1；后置广告 adv2。并且配置项与值之间用等号连接，不能有多余空格。
         * 配置项之间不能有空行。
-    * 前置广告固定单行；后置广告可以多行，每一行的内容使用分号（;）分割。
+        * 前置广告固定单行；后置广告可以多行，每一行的内容使用分号（;）分割。
     
-* 配置及效果示例图如下：
+    * 配置及效果示例图如下：
     
-        <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/config.jpg?raw=true?raw=true" alt="错误或者警告.png" style="zoom:80%;" /> 
+        <img src="https://github.com/ustcyyw/markdown-git_tool/blob/master/picture/config.jpg?raw=true?raw=true" alt="config.png" style="zoom:80%;" /> 
     
 * 小程序入口`APPEnter`
 
   ```java
-  	static {
+  static {
           StringSetting.setSetting();
       }
   ```
 
   * 使用静态代码块，在入口类加载的时候，将配置文件的内容读取到`StringSetting`中。
 
-* **生成md文件**
+#### 生成md文件：
 
 * `MdWriter.java`，将`StringSetting.java`中设置好的字符串，按照你的格式逻辑依次写入文件即可。
     * 使用类`PrintWriter writer`
     * 字符串的写入等等就按照你想生成的格式依次写入即可。在`StringSetting.java`设置字符串时已经添加了换行符，这里就不需要进行了。
 
-**小程序制作**：
+#### 小程序制作：
 
 * GUI设计，java学这个属实很傻，所以就不详细说：
 
